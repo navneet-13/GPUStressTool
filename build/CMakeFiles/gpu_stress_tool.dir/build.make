@@ -83,11 +83,25 @@ CMakeFiles/gpu_stress_tool.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gpu_stress_tool.dir/src/main.cpp.s"
 	/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hice1/n41/GPUStressTool/src/main.cpp -o CMakeFiles/gpu_stress_tool.dir/src/main.cpp.s
 
+CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o: CMakeFiles/gpu_stress_tool.dir/flags.make
+CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o: /home/hice1/n41/GPUStressTool/src/profiler.cpp
+CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o: CMakeFiles/gpu_stress_tool.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o"
+	/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o -MF CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o.d -o CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o -c /home/hice1/n41/GPUStressTool/src/profiler.cpp
+
+CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.i"
+	/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hice1/n41/GPUStressTool/src/profiler.cpp > CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.i
+
+CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.s"
+	/usr/local/pace-apps/spack/packages/linux-rhel9-x86_64_v3/gcc-11.3.1/gcc-12.3.0-ukkkutsxfl5kpnnaxflpkq2jtliwthfz/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hice1/n41/GPUStressTool/src/profiler.cpp -o CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.s
+
 CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o: CMakeFiles/gpu_stress_tool.dir/flags.make
 CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o: CMakeFiles/gpu_stress_tool.dir/includes_CUDA.rsp
 CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o: /home/hice1/n41/GPUStressTool/src/stress_memory.cu
 CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o: CMakeFiles/gpu_stress_tool.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o"
 	/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o -MF CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o.d -x cu -c /home/hice1/n41/GPUStressTool/src/stress_memory.cu -o CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o
 
 CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.i: cmake_force
@@ -101,16 +115,20 @@ CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.s: cmake_force
 # Object files for target gpu_stress_tool
 gpu_stress_tool_OBJECTS = \
 "CMakeFiles/gpu_stress_tool.dir/src/main.cpp.o" \
+"CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o" \
 "CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o"
 
 # External object files for target gpu_stress_tool
 gpu_stress_tool_EXTERNAL_OBJECTS =
 
 gpu_stress_tool: CMakeFiles/gpu_stress_tool.dir/src/main.cpp.o
+gpu_stress_tool: CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o
 gpu_stress_tool: CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o
 gpu_stress_tool: CMakeFiles/gpu_stress_tool.dir/build.make
+gpu_stress_tool: /usr/local/cuda/lib64/libcupti.so
+gpu_stress_tool: /usr/lib64/libnvidia-ml.so
 gpu_stress_tool: CMakeFiles/gpu_stress_tool.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable gpu_stress_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable gpu_stress_tool"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gpu_stress_tool.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

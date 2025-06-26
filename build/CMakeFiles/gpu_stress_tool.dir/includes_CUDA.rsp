@@ -1,1 +1,1 @@
--I/home/hice1/n41/GPUStressTool/include
+-I/home/hice1/n41/GPUStressTool/include -I"/usr/local/cuda/targets/x86_64-linux/include"

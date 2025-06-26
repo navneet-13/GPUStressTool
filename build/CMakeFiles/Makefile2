@@ -81,12 +81,12 @@ clean: CMakeFiles/gpu_stress_tool.dir/clean
 CMakeFiles/gpu_stress_tool.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=1,2,3 "Built target gpu_stress_tool"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hice1/n41/GPUStressTool/build/CMakeFiles --progress-num=1,2,3,4 "Built target gpu_stress_tool"
 .PHONY : CMakeFiles/gpu_stress_tool.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gpu_stress_tool.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hice1/n41/GPUStressTool/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hice1/n41/GPUStressTool/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gpu_stress_tool.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hice1/n41/GPUStressTool/build/CMakeFiles 0
 .PHONY : CMakeFiles/gpu_stress_tool.dir/rule

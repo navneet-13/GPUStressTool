@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hice1/n41/GPUStressTool/src/stress_memory.cu" "CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o" "gcc" "CMakeFiles/gpu_stress_tool.dir/src/stress_memory.cu.o.d"
   "/home/hice1/n41/GPUStressTool/src/main.cpp" "CMakeFiles/gpu_stress_tool.dir/src/main.cpp.o" "gcc" "CMakeFiles/gpu_stress_tool.dir/src/main.cpp.o.d"
+  "/home/hice1/n41/GPUStressTool/src/profiler.cpp" "CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o" "gcc" "CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

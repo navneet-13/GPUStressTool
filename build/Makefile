@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/profiler.o: src/profiler.cpp.o
+.PHONY : src/profiler.o
+
+# target to build an object file
+src/profiler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.o
+.PHONY : src/profiler.cpp.o
+
+src/profiler.i: src/profiler.cpp.i
+.PHONY : src/profiler.i
+
+# target to preprocess a source file
+src/profiler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.i
+.PHONY : src/profiler.cpp.i
+
+src/profiler.s: src/profiler.cpp.s
+.PHONY : src/profiler.s
+
+# target to generate assembly for a file
+src/profiler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gpu_stress_tool.dir/build.make CMakeFiles/gpu_stress_tool.dir/src/profiler.cpp.s
+.PHONY : src/profiler.cpp.s
+
 src/stress_memory.o: src/stress_memory.cu.o
 .PHONY : src/stress_memory.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/profiler.o"
+	@echo "... src/profiler.i"
+	@echo "... src/profiler.s"
 	@echo "... src/stress_memory.o"
 	@echo "... src/stress_memory.i"
 	@echo "... src/stress_memory.s"

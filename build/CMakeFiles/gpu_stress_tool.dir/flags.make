@@ -11,7 +11,7 @@ CUDA_FLAGS = -std=c++14 --generate-code=arch=compute_80,code=[compute_80,sm_80] 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/hice1/n41/GPUStressTool/include
+CXX_INCLUDES = -I/home/hice1/n41/GPUStressTool/include -I/usr/local/cuda/targets/x86_64-linux/include
 
 CXX_FLAGS = -std=gnu++14
 
